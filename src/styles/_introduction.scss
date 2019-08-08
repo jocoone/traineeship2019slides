@@ -1,0 +1,30 @@
+.introduction {
+  .column {
+    img {
+      max-width: 600px;
+      max-height: 600px;
+      margin: 0 auto;
+    }
+
+    &:nth-child(2) {
+      text-align: left;
+
+      h2 {
+        font-size: 3em;
+        font-weight: bold;
+      }
+
+      .text-intro {
+        font-size: 2em;
+      }
+
+      .description {
+        font-size: 1.4em;
+
+        li {
+          padding: 20px 0;
+        }
+      }
+    }
+  }
+}

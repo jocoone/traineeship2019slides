@@ -1,0 +1,21 @@
+@import "../styles/colors";
+
+footer.metadata a,
+time {
+  text-decoration: none;
+
+  color: $text-color;
+}
+
+footer.metadata time {
+  line-height: 1em;
+  margin-bottom: 0 !important;
+}
+
+footer.metadata a:hover {
+  color: $text-color;
+}
+
+footer.metadata span.title {
+  color: $meta;
+}

@@ -1,0 +1,45 @@
+{
+  "name": "gatsby-deck",
+  "description": "Create presentations using Gatsby, React & Markdown.",
+  "version": "2.0.0",
+  "author": "Fabian Schultz <desk@fabianschultz.com>",
+  "dependencies": {
+    "chokidar": "^3.0.2",
+    "gatsby": "^2.13.45",
+    "gatsby-plugin-layout": "^1.1.2",
+    "gatsby-plugin-offline": "^2.2.4",
+    "gatsby-plugin-react-helmet": "^3.1.2",
+    "gatsby-plugin-sharp": "^2.2.9",
+    "gatsby-remark-images": "^3.1.7",
+    "gatsby-source-filesystem": "^2.1.7",
+    "gatsby-transformer-remark": "^2.6.10",
+    "gatsby-transformer-sharp": "^2.2.5",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-helmet": "^5.2.1",
+    "react-swipeable": "^4.3.2",
+    "react-transition-group": "^2.9.0",
+    "webslides": "git+https://github.com/webslides/WebSlides.git",
+    "webslides-animation": "^1.0.2"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-starter"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "format": "prettier --write \"src/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "gatsby-plugin-sass": "^2.1.3",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
+    "gatsby-remark-copy-linked-files": "^2.1.4",
+    "node-sass": "^4.12.0",
+    "prettier": "^1.18.2"
+  }
+}

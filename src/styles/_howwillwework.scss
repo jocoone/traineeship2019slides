@@ -1,0 +1,38 @@
+@import "colors";
+
+.howwillwework {
+  .column {
+    .content {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+
+      i {
+        font-size: 4em;
+        text-align: center;
+      }
+
+      p {
+        font-size: 1.5em;
+        margin-top: 15px;
+        line-height: 1.5em;
+
+        .emoji {
+          font-size: 1.4em;
+        }
+      }
+
+      &.first {
+        background-color: $typescript;
+      }
+
+      &.second {
+        background-color: $angular;
+      }
+
+      &.third {
+        background-color: $karma;
+      }
+    }
+  }
+}

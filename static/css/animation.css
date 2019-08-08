@@ -1,0 +1,33 @@
+.animate-show {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transition: all .5s ease-out;
+}
+.animate-show.animated {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.animate-hide {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transition: all .5s ease-out;
+}
+.animate-hide.animated {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+.animate-block {
+  display: none !important;
+}
+.animate-block.animated {
+  display: inherit !important;
+}
+
+.animate-inline {
+  display: none !important;
+}
+.animate-inline.animated {
+  display: inline !important;
+}

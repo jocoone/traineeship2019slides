@@ -1,0 +1,46 @@
+@import "colors";
+
+.agenda {
+  .features {
+    li {
+      background-color: $white !important;
+      color: $black;
+      font-size: 1.3em;
+
+      h2 {
+        font-size: 2em;
+        display: flex;
+        align-items: center;
+      }
+
+      b {
+        display: inline-block;
+        text-shadow: none;
+        font-size: 2em;
+        text-transform: uppercase;
+        line-height: 1.2em;
+      }
+
+      .ecmascript {
+        color: $ecmascript;
+      }
+
+      .typescript {
+        color: $typescript;
+      }
+
+      .karma {
+        color: $karma;
+      }
+
+      .rxjs {
+        color: $rxjs;
+      }
+
+      div div {
+        margin-top: 25px;
+      }
+    }
+  }
+
+}
