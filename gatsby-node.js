@@ -44,8 +44,8 @@ exports.createPages = async ({ actions, createContentDigest, createNodeId, graph
         return Promise.reject(slidesResult.errors);
       }
 
-      const slides = slidesResult.data.allFile.nodes;
-      slides.sort((a, b) => a.base > b.base ? 1 : -1);
+      const x = slidesResult.data.allFile.nodes;
+      const slides = _.orderBy(x, ['base'], ['asc']);
       const content = slides.map(({ absolutePath }) => readFileSync(absolutePath)).join('');
       createPage({
         path: '/slides',

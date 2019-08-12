@@ -12,26 +12,12 @@ h1 {
   font-size: 2em;
 }
 
-.bg-ecmascript {
-  background-color: $ecmascript;
-  color: #000;
-
-  .features {
-    li {
-      i {
-        margin-right: 15px;
-        font-size: 2.5em;
-      }
-
-      p  {
-        font-size: 1.5em;
-        line-height: 1.3em;
-      }
-    }
-  }
+.code-comment {
+  font-weight: bold;
 }
 
-.features {
+.features,
+.clients {
   li {
     background-color: rgba(255, 255, 255, .9) !important;
 
@@ -45,4 +31,4 @@ h1 {
 @import "introduction";
 @import "agenda";
 @import "howwillwework";
-@import "topic";
+@import "ecmascript";

@@ -1,0 +1,20 @@
+<section class="bg-ecmascript">
+    <div class="wrap">
+        <h1 style="font-size: 4em;">Default, <b>Rest</b>, Spread</h1>
+        <div class="grid">
+            <div class="column">
+                    <pre style="font-size: 1.6em; line-height: 1.2em;">
+function rest(x, y) {
+    var a = Array.prototypes.slice.call(arguments, 2);
+    <span class="code-comment">return x * y + a.length;</span>
+}</pre>
+            </div>
+            <div class="column">
+                    <pre style="font-size: 1.6em; line-height: 1.2em;">
+function rest(x, y, <span class="code-comment">...a</span>) {
+    return x * y + a.length;
+}</pre>
+            </div>
+        </div>
+    </div>
+</section>

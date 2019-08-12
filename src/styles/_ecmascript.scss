@@ -1,0 +1,35 @@
+.bg-ecmascript {
+  background-color: $ecmascript;
+  color: #000;
+
+  .features {
+    li {
+      i {
+        margin-right: 15px;
+        font-size: 2.5em;
+      }
+
+      p  {
+        font-size: 1.5em;
+        line-height: 1.3em;
+      }
+    }
+  }
+
+  a {
+    color: #000 !important;
+    text-decoration: underline;
+  }
+
+  pre {
+    background-color: $white !important;
+  }
+}
+
+.ecmascriptusage {
+  .clients {
+    li {
+      justify-content: center;
+    }
+  }
+}
