@@ -2,16 +2,18 @@
     <div class="wrap">
         <h1 style="font-size: 4em;">Classes</h1>
         <pre style="font-size: 1.6em; line-height: 1.2em;">
-var Feedback = <span class="code-comment">function(consultant)</span> {
-    <span class="code-comment">this</span>.consultant = consultant;
-    <span class="code-comment">this</span>.checkins = [];
+<span class="code-comment">class</span> Feedback {
+    <span class="code-comment">constructor</span>(consultant) {
+        this.consultant = consultant;
+        this.checkins = [];
+    }
+                  
+    <span class="code-comment">addCheckin(checkin)</span> {
+        this.checkins.push(checkin);
+    }
 }
                   
-Feedack.<span class="span code-comment">prototype</span>.addCheckin(text) {
-    this.checkins.push(checkin);
-}
-                  
-var f = new Feedback('Joey Comhaire');
+let f = new Feedback('Joey Comhaire');
 f.addCheckin('I did very well.');</pre>
     </div>
 </section>
