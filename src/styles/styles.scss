@@ -27,8 +27,16 @@ h1 {
   }
 }
 
+.fa-check {
+  color: $check;
+}
+.fa-times {
+  color: $angular;
+}
+
 @import "title";
 @import "introduction";
 @import "agenda";
 @import "howwillwework";
 @import "ecmascript";
+@import "typescript";

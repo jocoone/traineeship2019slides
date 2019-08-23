@@ -1,0 +1,30 @@
+<section class="bg-typescript fullscreen">
+        <div class="wrap">
+                <div class="bg-white shadow">
+                    <pre style="font-size: 1.3em; line-height: 1.2em;">
+{
+    "compileOnSave": false,
+    "<span class="code-ex">exclude</span>": [
+        "node_modules",
+        "test",
+        "test.ts"
+    ],
+    "<span class="code-ex">include</span>": [
+        "./**/*.ts"
+    ],
+    "compilerOptions": {
+        "outDir": "./dist",
+        "sourceMap": true,
+        "declaration": false,
+        <span class="code-ex">"module": "commonjs",</span>
+        "emitDecoratorMetadata": true,
+        "preserveConstEnums": true,
+        "experimentalDecorators": true,
+        "noImplicitAny": true,
+        <span class="code-ex">"target": "es5"</span>
+    }
+}
+                    </pre>
+            </div>
+        </div>        
+    </section>

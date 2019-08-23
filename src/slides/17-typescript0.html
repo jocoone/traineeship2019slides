@@ -1,0 +1,25 @@
+<section class="bg-typescript">
+        <span data-step-count=1></span>
+        <div class="wrap">
+            <h1>Generics</h1>
+            <div class="grid">
+                <div class="column column-es">
+                    <h2>ES2015</h2>
+                    <p style="font-size: 5em; margin-top: 100px;">
+                        <span>🤯</span></p>
+                </div>
+                <div class="column column-ts animate-show" data-step="1">
+                    <h2>Typescript</h2>
+                    <pre><span class="code-ex">class</span> Logger<span class="code-ex">&lt;T></span> {
+    log(value: <span class="code-ex">T</span>): void {
+        console.log(value);
+    }
+}
+
+const LOGGER = new Logger<span class="code-ex">&lt;number></span>();
+LOGGER.log(5); <span class="code-comment">// OK</span>
+LOGGER.log('5'); <span class="error">// COMPILATION ERROR</span></pre>
+                </div>
+            </div>
+        </div>
+    </section>

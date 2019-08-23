@@ -1,0 +1,32 @@
+<section class="bg-typescript">
+        <span data-step-count=1></span>
+        <div class="wrap">
+            <h1>classes</h1>
+            <div class="grid">
+                <div class="column column-es">
+                    <h2>ES2015</h2>
+                    <pre>class Calculator {
+    add(x, y) {
+        return x + y;
+    }
+}
+
+let calculator = new Calculator();</pre>
+                </div>
+                <div class="column column-ts animate-show" data-step="1">
+                    <h2>Typescript</h2>
+                    <pre>class Calculator {
+    add(x: number, y: number): number {
+        return x + y;
+    }
+
+    print(): void {
+        console.log('calculator');
+    }
+}
+
+let calculator: <span class="code-ex">Calculator</span> = new Calculator();</pre>
+                </div>
+            </div>
+        </div>
+    </section>

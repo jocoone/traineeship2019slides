@@ -45,6 +45,7 @@ exports.createPages = async ({ actions, createContentDigest, createNodeId, graph
       }
 
       const x = slidesResult.data.allFile.nodes;
+      console.log(x);
       const slides = _.orderBy(x, ['base'], ['asc']);
       const content = slides.map(({ absolutePath }) => readFileSync(absolutePath)).join('');
       createPage({

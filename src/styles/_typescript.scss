@@ -1,0 +1,101 @@
+@import "colors";
+
+.bg-typescript {
+  background-color: $typescript;
+  color: $white;
+
+  pre {
+    background-color: $white;
+    color: $black;
+    
+    .error {
+      color: $angular;
+    }
+    .code-exclamation, .code-ex {
+      font-weight: bold;
+      color: $typescript;
+    }
+  }
+
+  &.ecmascript {
+    ul {
+      font-size: 2em;
+
+      li {
+        line-height: 1.5em;
+      }
+    }
+  }
+
+  .googleandmicrosoft {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .flexblock.steps {
+    li {
+      color: $black;
+      font-size: 1.5em;
+      p {
+        line-height: 1.4em;
+      }
+
+      h2 {
+        font-size: 1.3em;
+        line-height: 1.2em;
+      }
+    }
+  }
+
+  .quiz {
+    .grid {
+      .console {
+          div {
+            line-height: 1.2em;
+            font-size: 1.5em;
+
+            .error {
+              color: $angular;
+            }
+          }
+      }
+    }
+  }
+
+  .grid {
+    .column {
+      background-color: $white;
+      color: $black;
+
+      h1, h2 {
+        font-weight: bold;
+      }
+
+      pre {
+        color: $black;
+        font-size: 1.3em;
+        line-height: 1.2em;
+
+        .code-exclamation, .code-ex {
+          font-weight: bold;
+        }
+      }
+
+      &:first-child {
+        border-right: 1px solid rgba(0, 0, 0, .1);
+      }
+    }
+
+    .column-es {
+      h1, h2, .code-exclamation, .code-ex {
+        color: $ecmascript;
+      }
+    }
+
+    .column-ts {
+      h1, h2, .code-exclamation, .code-ex {
+        color: $typescript;
+      }
+    }
+  }
+}
