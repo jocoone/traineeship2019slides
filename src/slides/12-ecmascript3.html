@@ -1,13 +1,16 @@
 <section class="bg-ecmascript">
     <div class="wrap">
-        <h1 style="font-size: 4em;">Classes - imports/exports</h1>
+        <h1 style="font-size: 4em;">Object Destructing</h1>
         <pre style="font-size: 1.6em; line-height: 1.2em;">
-<span class="code-comment">import</span> {Portfolio} from './src/portfolio.js';
-<span class="code-comment">import</span> Portfolio from './src/portfolio.js';
-<span class="code-comment">const</span> {Portfolio} = <span class="code-comment">require</span>('./src/portfolio.js');
-<span class="code-comment">const</span> Portfolio = <span class="code-comment">require</span>('./src/portfolio.js');
-
-<span class="code-comment">export</span> {Portfolio};
-<span class="code-comment">export default</span> Portfolio;</pre>
+function destructing() {
+    let person = {
+        name: 'Joey Comhaire',
+        work: {
+            name: 'Axxes',
+            job: 'Fullstack Software Engineer'
+        }
+    };
+    let <span class="code-comment">{ name, work: { name, project = ''}}</span> = person;
+}</pre>
     </div>
 </section>

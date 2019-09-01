@@ -1,10 +1,24 @@
-<section class="bg-ecmascript">
+<section class="bg-ecmascript aligncenter">
     <div class="wrap">
-        <h1 style="font-size: 4em;">Default, <b>Rest</b>, Spread</h1>
-        <pre style="font-size: 1.6em; line-height: 1.2em;">
-function rest(x, y) {
-    var a = Array.prototypes.slice.call(arguments, 2);
-    <span class="code-comment">return x * y + a.length;</span>
+        <div class="grid">
+                <div class="column content-left">
+                        <h1 style="font-size: 4em;">Arrow functions</h1>
+                    </div>
+                    <div class="column">
+                        <pre style="font-size: 1.4em; line-height: 1.2em;">
+function arrow() {
+    let list = [1, 2, 3, 4, 5];
+                                  
+    list
+        .filter(i <span class="code-comment">=></span> i % 2 == 0)
+        .map(i <span class="code-comment">=></span> i * 2)
+        .forEach(i <span class="code-comment">=></span> console.log(i));
 }</pre>
+<pre style="font-size: 1.5em; line-height: 1.2em;">
+<span class="code-comment">> 4
+> 8
+</span></pre>
+                    </div>
+        </div>
     </div>
 </section>

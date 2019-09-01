@@ -1,6 +1,35 @@
 <section class="bg-typescript">
-    <div class="wrap">
-            <h1 style="font-size: 4em;">Type compatibility</h1>
-            <p style="font-size: 3em; line-height: 1.2em;"><u>Type compatibility</u> is a method used by the <b>Typescript</b> compiler to determine whether <b>an assignment</b> is valid and a value can be assigned to a specific variable of a specific type.</p>
-    </div>        
-</section>
+        <span data-step-count=4></span>
+        <div class="wrap quiz">
+            <h1>QUIZ</h1>
+            <div class="grid ms">
+                <div class="column column-ts">
+                    <h2>Typescript</h2>
+                    <pre><span class="code-ex">class</span> Person {
+    constructor(public name: string) {}
+}
+<span class="code-ex">class</span> Company {
+}
+<span class="code-ex">class</span> Logger<span class="code-ex">&lt;T></span> {
+    log(value: <span class="code-ex">T</span>): void {
+        console.log(value);
+    }
+}
+const LOGGER = new Logger&lt;Person>();
+const LOGGER2 = new Logger&lt;Company>();
+LOGGER.log(new Person('Bart'));
+LOGGER.log(5);
+LOGGER2.log(5);
+LOGGER2.log(new Company());
+</pre>
+                </div>
+                <div class="column content-right console">
+                        <h2>console</h2>
+                        <div data-step="1" class="animate-show" style="margin-top: 13.2em;">Person { name: "Bart" }</div>
+                        <div data-step="2" class="animate-show"><span class="error">COMIPLATION ERROR</span></div>
+                        <div data-step="3" class="animate-show">5</div>
+                        <div data-step="4" class="animate-show">Company {}</div>
+                    </div>
+            </div>
+        </div>
+    </section>

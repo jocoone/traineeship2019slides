@@ -1,18 +1,14 @@
 <section class="bg-ecmascript">
     <div class="wrap">
-        <h1 style="font-size: 4em;">Object Destructing</h1>
+        <h1 style="font-size: 4em;">Template literals</h1>
+
         <pre style="font-size: 1.6em; line-height: 1.2em;">
-function destructing() {
-    var person = {
-        name: 'Joey Comhaire',
-        work: {
-            name: 'Axxes',
-            job: 'Fullstack Software Engineer'
-        }
-    };
-    console.log(person.name);
-    console.log(person.work.name);
-    console.log(<span class="code-comment">person.work && person.work.project || 'noproject'</span>);
+function log(firstName, lastName) {
+    console.log("Hello " 
+        <span class="code-comment">+</span> firstName 
+        <span class="code-comment">+ " "</span>
+        + lastName
+        + <span class="code-comment">".\n\t</span>How are you?");
 }</pre>
     </div>
 </section>

@@ -1,24 +1,13 @@
 <section class="bg-ecmascript">
     <div class="wrap">
-        <h1 style="font-size: 4em;">Classes</h1>
+        <h1 style="font-size: 4em;">Array Destructing</h1>
         <pre style="font-size: 1.6em; line-height: 1.2em;">
-<span class="code-comment">class</span> Person {
-    <span class="code-comment">constructor</span>(name, birthDate) {
-        this.name = name;
-        this.birthDate = birthDate;
-    }
-    ...
-}
-
-<span class="code-comment">class</span> Consultant <span class="code-comment">extends</span> Person {
-    <span class="code-comment">constructor</span>(name, birthDate, project) {
-        <span class="code-comment">super</span>(name, birthDate)
-        this.project = project;
-    }
-    ... + person
-}
+function destructing() {
+    var list = [1, 2, 3];
                   
-let person = new Person('Joey Comhaire', new Date(1992, 4, 18));
-let consultant = new Consultant('...', date, 'Healthconnect');</pre>
+    console.log(<span class="code-comment">list[0]</span>);
+    console.log(<span class="code-comment">list[1]</span>);
+    console.log(<span class="code-comment">list[list.length - 1]</span>);
+}</pre>
     </div>
 </section>

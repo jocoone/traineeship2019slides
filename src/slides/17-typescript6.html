@@ -1,20 +1,25 @@
 <section class="bg-typescript">
-        <span data-step-count=3></span>
+        <span data-step-count=4></span>
         <div class="wrap quiz">
             <h1>QUIZ</h1>
             <div class="grid ms">
                 <div class="column column-ts">
                     <h2>Typescript</h2>
-                    <pre><span class="code-ex">enum</span> COLOR {
-    YELLOW, RED
+                    <pre>function <span class="code-ex">helloWorld</span>(...rest: string[]): void {
+    console.log(rest.length);
 }
-console.log(COLOR.YELLOW);
-<span class="animate-show" data-step="2">console.log(COLOR[COLOR.YELLOW]);</span></pre>
+
+helloWorld('Joey', '27');
+helloWorld('Joey', 27);
+helloWorld('Joey');
+helloWorld();</pre>
                 </div>
                 <div class="column content-right console">
                         <h2>console</h2>
-                        <div data-step="1" class="animate-show" style="margin-top: 3em;">0 <span class="emoji">🤔</span></div>
-                        <div data-step="3" class="animate-show" style="margin-top: 1em;">YELLOW</div>
+                        <div data-step="1" class="animate-show" style="margin-top: 4.8em;">2</div>
+                        <div data-step="2" class="animate-show"><span class="error">COMIPLATION ERROR</span></div>
+                        <div data-step="3" class="animate-show">1</div>
+                        <div data-step="4" class="animate-show">0</div>
                     </div>
             </div>
         </div>

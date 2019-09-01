@@ -1,13 +1,11 @@
 <section class="bg-ecmascript">
     <div class="wrap">
-        <h1 style="font-size: 4em;">Array Destructing</h1>
+        <h1 style="font-size: 4em;">Template literals</h1>
+
         <pre style="font-size: 1.6em; line-height: 1.2em;">
-function destructing() {
-    var list = [1, 2, 3];
-                  
-    console.log(<span class="code-comment">list[0]</span>);
-    console.log(<span class="code-comment">list[1]</span>);
-    console.log(<span class="code-comment">list[list.length - 1]</span>);
+function log(firstName, lastName) {
+    console.log(<span class="code-comment">`</span>Hello <span class="code-comment">${firstName}</span> <span class="code-comment">${lastName}</span>
+        How are you?<span class="code-comment">`</span>);
 }</pre>
     </div>
 </section>

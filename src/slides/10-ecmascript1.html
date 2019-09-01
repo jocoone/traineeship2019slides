@@ -1,14 +1,12 @@
 <section class="bg-ecmascript">
-    <div class="wrap">
-        <h1 style="font-size: 4em;">Template literals</h1>
-
-        <pre style="font-size: 1.6em; line-height: 1.2em;">
-function log(firstName, lastName) {
-    console.log("Hello " 
-        <span class="code-comment">+</span> firstName 
-        <span class="code-comment">+ " "</span>
-        + lastName
-        + <span class="code-comment">".\n\t</span>How are you?");
+        <div class="wrap">
+            <h1 style="font-size: 4em;"><b>Default</b>, Rest, Spread</h1>
+            <pre style="font-size: 1.6em; line-height: 1.2em;">
+function myDefault(x) {
+    if (!x) {
+        x = 0;
+    }
+    return x * 2;
 }</pre>
-    </div>
-</section>
+        </div>
+    </section>

@@ -1,31 +1,21 @@
 <section class="bg-ecmascript aligncenter">
+    <span data-step-count=1></span>
     <div class="wrap">
-        <h1 style="font-size: 4em;">Arrow functions</h1>
         <div class="grid">
-                    <div class="column">
-                        <pre style="font-size: 1.5em; line-height: 1.2em;">
-function noArrow() {
-    var list = [1, 2, 3, 4, 5];
-                                  
-    list.filter(<span class="code-comment">function</span>(i) {
-        return i % 2 == 0;
-    }).map(<span class="code-comment">function</span>(i) {
-        return i * 2;
-    }).forEach(<span class="code-comment">function</span>(i) {
-        console.log(i);
-    });
-}</pre>
+                <div class="column content-left">
+                        <h1 style="font-size: 4em;">Block scopes</h1>
+                        <h1 style="font-size: 4em;" class="animate-show" data-step="1">Hoisting <i class="fas fa-question"></i></h1>
                     </div>
                     <div class="column">
-                            <pre style="font-size: 1.4em; line-height: 1.2em;">
-function arrow() {
-    let list = [1, 2, 3, 4, 5];
-                                                                      
-    list
-        .filter(i <span class="code-comment">=></span> i % 2 == 0)
-        .map(i <span class="code-comment">=></span> i * 2)
-        .forEach(i <span class="code-comment">=></span> console.log(i));
+                        <pre style="font-size: 1.5em; line-height: 1.2em;" class="animate-show" data-step="1">
+function hoisting() {
+    for (<span class="code-comment">var</span> i = 0; i < 5; i++) {
+        console.log(i);
+    }
+    console.log(i);
 }</pre>
+                        <pre style="font-size: 2.5em; line-height: 1.2em;" class="animate-show" data-step="1">
+Output or Error?</pre>
                     </div>
         </div>
     </div>
