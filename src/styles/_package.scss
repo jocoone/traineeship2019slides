@@ -1,0 +1,29 @@
+@import 'colors';
+
+.bg-package {
+  background-color: $npm;
+  color: $white;
+
+  .flexblock.specs {
+    background-color: $white;
+    color: $dark-bg;
+  }
+
+  pre {
+    background-color: $white !important;
+    color: $dark-bg;
+
+    .highlight {
+      color: $npm;
+      font-weight: bold;
+    }
+  }
+
+  > pre {
+    font-size: 2em;
+  }
+
+  pre + pre {
+    margin-top: 20px;
+  }
+}
