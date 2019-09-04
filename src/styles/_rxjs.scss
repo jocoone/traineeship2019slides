@@ -1,0 +1,73 @@
+@import "colors";
+
+.bg-rxjs {
+  background-color: $rxjs;
+  color: $white;
+
+  pre {
+    background-color: $white !important;
+    color: $dark-bg;
+    font-size: 1.8em;
+    line-height: 1.2em;
+
+    .highlight {
+      color: $rxjs;
+      font-weight: bold;
+    }
+  }
+
+  .flexblock.specs {
+    background-color: $white;
+    color: $dark-bg;
+
+    li {
+      h2 {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 1.8em;
+      }
+    }
+  }
+
+  .flexblock.steps {
+    li {
+      color: $dark-bg !important;
+    }
+  }
+
+  .flexblock.clients {
+    li {
+      color: $dark-bg;
+
+      &.animated {
+        color: $white;
+        background-color: #da5daa !important;
+      }
+
+      h2 {
+        margin: 25px;
+        text-align: center;
+      }
+    }
+  }
+
+  .eventbasedprogramming {
+    li {
+      color: $dark-bg;
+
+      h2 {
+        font-size: 2em;
+        line-height: 1.2em;
+      }
+    }
+  }
+
+  .list-animated {
+    li.animated {
+      text-decoration: line-through;
+      opacity: .5;
+    }
+  }
+}

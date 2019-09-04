@@ -1,0 +1,24 @@
+<section class="bg-tests fullscreen">
+    <div class="wrap testsexamples">
+      <h1>
+        Component Testing
+      </h1>
+      <pre style="font-size: 1.5em; line-height: 1.2em;">describe('Input', () => {
+  let component;
+  let onChangeSpy;
+  let onBlurSpy;
+        
+  beforeEach(() => {
+    onChangeSpy = jest.fn();
+    onBlurSpy = jest.fn();
+    component = <span class="highlight">mount</span>(&lt;Checkbox onChange={onChangeSpy} onBlur={onBlurSpy} />);
+  });
+        
+  it('should render the component', () => {
+    <span class="highlight">expect</span>(component).toBeDefined();
+    <span class="highlight">expect</span>(component.<span class="highlight">find</span>('.hc-component').length).toBe(1);
+    <span class="highlight">expect</span>(component.find('.hc-select-custom-input').text()).toEqual('test label');
+  });
+});</pre>
+    </div>
+  </section>

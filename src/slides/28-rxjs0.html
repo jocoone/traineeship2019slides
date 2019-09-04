@@ -1,0 +1,22 @@
+<section class="bg-rxjs fullscreen">
+    <span data-step-count=1></span>
+          <div class="wrap">
+            <h1>
+              AsyncSubject
+            </h1>  
+            <p style="font-size: 2em;">A variant where only the <code>last value</code> is send to the observers and only when execution completes.</p>
+            <pre>import { <span class="highlight">AsyncSubject</span> } from 'rxjs';
+const subject = new AsyncSubject();
+subject.subscribe({
+  next: (v) => console.log(`A: ${v}`)
+});
+subject.next(1);
+subject.next(2);
+subject.subscribe({
+  next: (v) => console.log(`B: ${v}`)
+});
+subject.next(3);
+subject.complete();<span class="highlight">// Output?</span></pre>
+                <pre class="animate-show" data-step="1"><span class="highlight">A: 3, A: 3</span></pre>
+          </div>
+        </section>

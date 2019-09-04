@@ -1,0 +1,15 @@
+<section class="bg-tests fullscreen">
+    <div class="wrap testsexamples">
+      <h1>
+        Unit Testing
+      </h1>
+      <pre style="font-size: 1.8em; line-height: 1.2em;"><span class="highlight">describe</span>('Consultant', () => {
+  <span class="highlight">test</span>('create a consultant', () => {
+    const consultant = new Consultant('John Doe', new Date(1990, 1, 1), 'Frontend Consultant');
+    <span class="highlight">expect</span>(consultant.name).toBe('John Doe');
+    <span class="highlight">expect</span>(consultant.birthDate).toEqual(new Date(1990, 1, 1));
+    <span class="highlight">expect</span>(consultant.functionLevel).toBe('Frontend Consultant');
+  });
+});</pre>
+    </div>
+  </section>

@@ -1,0 +1,21 @@
+<section class="bg-tests fullscreen">
+    <div class="wrap testsexamples">
+      <h1>
+        E2E Testing
+      </h1>
+      <pre style="font-size: 1.6em; line-height: 1.2em;">describe('angularjs homepage todo list', function() {
+  it('should add a todo', function() {
+    <span class="highlight">browser</span>.get('https://angularjs.org');
+        
+    var todoList = element.all(by.repeater('todo in todoList.todos'));
+    expect(todoList.count()).toEqual(3);
+    expect(todoList.get(2).getText()).toEqual('write first protractor test');
+        
+    // You wrote your first test, cross it off the list
+    todoList.get(2).element(by.css('input')).click();
+    var completedAmount = element.all(by.css('.done-true'));
+    expect(completedAmount.count()).toEqual(2);
+  });
+});</pre>
+    </div>
+  </section>

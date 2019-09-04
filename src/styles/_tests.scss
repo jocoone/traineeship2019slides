@@ -1,0 +1,53 @@
+@import "colors";
+
+.bg-tests {
+  background-color: $jest;
+  color: $white;
+
+  pre {
+    color: $dark-bg;
+    background-color: $white !important;
+    font-size: 2em;
+    line-height: 1.2em;
+
+    .highlight {
+      color: $jest;
+      font-weight: bold;
+    }
+  }
+
+  .features {
+    li {
+      color: $dark-bg;
+      
+      h1 {
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 2em;
+        line-height: 1.2em;
+      }
+
+      .react {
+        color: $react;
+        font-weight: bold;
+        font-size: 1.5em;
+      }
+
+      .angular {
+        color: $angular;
+        font-weight: bold;
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+
+.testsexamples {
+  .clients {
+    li {
+      justify-content: center;
+    }
+  }
+}
