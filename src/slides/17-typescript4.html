@@ -1,29 +1,32 @@
 <section class="bg-typescript">
-        <span data-step-count=5></span>
-        <div class="wrap quiz">
-            <h1>QUIZ</h1>
-            <div class="grid ms">
-                <div class="column column-ts">
-                    <h2>Typescript</h2>
-                    <pre>function <span class="code-ex">helloWorld</span>(name = 'Bavo',
-                    age?: number): void {
-    console.log('Hello ' + name + ', your age is ' + age);
+        <span data-step-count=1></span>
+        <div class="wrap">
+            <h1>classes</h1>
+            <div class="grid">
+                <div class="column column-es">
+                    <h2>ES2015</h2>
+                    <pre>class Calculator {
+    add(x, y) {
+        return x + y;
+    }
 }
 
-helloWorld('Joey', 27);
-helloWorld('Joey', '27');
-helloWorld('Joey');
-helloWorld();
-const name: string = helloWorld('Joey', 27);</pre>
+let calculator = new Calculator();</pre>
                 </div>
-                <div class="column content-right console">
-                        <h2>console</h2>
-                        <div data-step="1" class="animate-show" style="margin-top: 5.8em;">Hello Joey, your age is 27</div>
-                        <div data-step="2" class="animate-show"><span class="error">COMIPLATION ERROR</span></div>
-                        <div data-step="3" class="animate-show">Hello Joey, your age is undefined</div>
-                        <div data-step="4" class="animate-show">Hello Bavo, your age is undefined</div>
-                        <div data-step="5" class="animate-show"><span class="error">COMIPLATION ERROR</span></div>
-                    </div>
+                <div class="column column-ts animate-show" data-step="1">
+                    <h2>Typescript</h2>
+                    <pre>class Calculator {
+    add(x: number, y: number): number {
+        return x + y;
+    }
+
+    print(): void {
+        console.log('calculator');
+    }
+}
+
+let calculator: <span class="code-ex">Calculator</span> = new Calculator();</pre>
+                </div>
             </div>
         </div>
     </section>

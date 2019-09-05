@@ -1,21 +1,21 @@
 <section class="bg-rxjs">
-  <span data-step-count=1></span>
-          <div class="wrap">
-            <h1>
-              Subject
-            </h1>
-            <p style="font-size: 2em;">Special kind of subject acting like both the <b>observable</b> and the <b>observer</b></p>
-            <pre>import { <span class="highlight">Subject</span> } from 'rxjs';
-const subject = new Subject<number>();               
-<span class="highlight">subject.subscribe</span>({
-  next: (v) => console.log(`A: ${v}`)
-});
-<span class="highlight">subject.subscribe</span>({
-  next: (v) => console.log(`B: ${v}`)
-});        
-<span class="highlight">subject.next</span>(1);
-<span class="highlight">subject.next</span>(2);
-<span class="highlight">// Output?</span></pre>
-<pre class="animate-show" data-step="1"><span class="highlight">A: 1, B: 1, A: 2, B: 2</span></pre>
-          </div>
-        </section>
+        <div class="wrap">
+          <h1>
+            Cold Observable
+          </h1>
+          <ul class="flexblock specs">
+            <li>
+              <h2>Data produced inside the observable.</h2>
+            </li>
+            <li>
+              <h2>Executes only when subscribed.</h2>
+            </li>
+            <li>
+              <h2>Data is not shared. (<u>unicasting</u>)</h2>
+            </li>
+            <li>
+              <h2>Every subsriber triggers new execution.</h2>
+            </li>
+          </ul>
+        </div>
+      </section>

@@ -1,15 +1,23 @@
 <section class="bg-rxjs">
-  <span data-step-count=1></span>
         <div class="wrap">
           <h1>
-            Reactive Terminology
+            Observable Execution
           </h1>
-          <ul class="list-animated">
-            <li class="animated"><h1>Observable</h1></li>
-            <li data-step="1"><h1>Operator</h1></li>
-            <li><h1>Subscription</h1></li>
-            <li><h1>Subject</h1></li>
-            <li><h1>Scheduler</h1></li>
-          </ul>
+          <p style="font-size: 2em;">Start transmitting data through the observable.</p>
+          <pre style="font-size: 1.6em;">import { Observable } from 'rxjs';
+
+const observable = new Observable(function subscribe(<span class="highlight">subscriber</span>) {
+   <span class="highlight">subscriber.next('Hello world!');</span>
+   subscriber.complete(); <span class="highlight">// complete the execution</span>
+   subscriber.next('Whut?'); <span class="highlight">// Will not be send</span>
+   subscriber.error(new Error()); <span class="highlight">// throws error</span>
+});
+
+const subscription = observable.subscribe(s => console.log(s));
+observable.subscribe({
+  next(x) { console.log('got value ' + x); },
+  error(err) { console.error('something wrong occurred: ' + err); },
+  complete() { console.log('done'); }
+});</pre>
         </div>
       </section>

@@ -1,15 +1,17 @@
-<section class="bg-rxjs aligncenter">
+<section class="bg-rxjs">
         <div class="wrap">
           <h1>
-            Hot <i class="fas fa-arrows-alt-h"></i> Cold
+            Pull <i class="fas fa-arrows-alt-h"></i> Push
           </h1>
-          <div class="grid">
-            <div class="column" style=" justify-content: center; align-items: center;">
-              <img src="./images/flame.png" alt="fire" style="width: 400px;"/>
-            </div>
-            <div class="column" style=" justify-content: center; align-items: center;">
-                <img src="./images/ice.png" alt="ice" style="width: 400px;" />
-            </div>
-          </div>
+          <pre>let pull = new PullClass();
+let push = new PushClass();
+
+pull.pullData().<span class="highlight">forEach</span>(s => {
+  console.log(s);
+});
+
+push.pushData().<span class="highlight">subscribe</span>(s => {
+  console.log(s);
+});</pre>
         </div>
       </section>

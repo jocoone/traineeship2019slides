@@ -1,15 +1,20 @@
 <section class="bg-rxjs">
-    <span data-step-count=1></span>
-          <div class="wrap">
-            <h1>
-              Reactive Terminology
-            </h1>
-            <ul class="list-animated">
-              <li class="animated"><h1>Observable</h1></li>
-              <li class="animated"><h1>Operator</h1></li>
-              <li class="animated"><h1>Subscription</h1></li>
-              <li data-step="1"><h1>Subject</h1></li>
-              <li><h1>Scheduler</h1></li>
-            </ul>
-          </div>
-        </section>
+  <span data-step-count=1></span>
+        <div class="wrap">
+          <h1>
+            Pipeable operators
+          </h1>
+          <p style="font-size: 2em;">eg: map, filter, debounce, buffer, switchMap, ...</p>
+          <pre>const observable = new Observable(subscriber => {
+  subscriber.next(0);            
+  subscriber.next(1);            
+  subscriber.next(2);            
+});
+
+observable.<span class="highlight">pipe(</span>
+  <span class="highlight">map</span>(num => num * 2),
+  <span class="highlight">filter</span>(num => num > 2)
+).subscribe(x => console.log(x)); <span class="highlight">// Output?</span></pre>
+<pre class="animate-show" data-step=1><span class="highlight">4</span></pre>
+        </div>
+      </section>

@@ -1,0 +1,22 @@
+<section class="bg-rxjs fullscreen">
+    <span data-step-count=1></span>
+
+          <div class="wrap">
+            <h1>
+              BehaviourSubject
+            </h1>  
+            <p style="font-size: 2em;">Behaves just like normal subject but has a notion of the <code>current value</code>. It emits the <code>current value</code> when subscribed.</p>
+            <pre>import { <span class="highlight">BehaviorSubject</span> } from 'rxjs';
+const subject = new BehaviorSubject(0); <span class="highlight">// 0 is the initial value</span>
+subject.subscribe({
+  next: (v) => console.log(`A: ${v}`)
+});
+subject.next(1);
+subject.next(2);
+subject.subscribe({
+  next: (v) => console.log(`B: ${v}`)
+});
+subject.next(3);<span class="highlight">// Output?</span></pre>
+                <pre class="animate-show" data-step="1"><span class="highlight">A: 0, A: 1, A: 2, B: 2, A: 3, B: 3</span></pre>
+          </div>
+        </section>

@@ -1,3 +1,29 @@
-<section class="bg-typescript aligncenter">
-        <h1 style="font-size: 4em;">ENUMS</h1>
+<section class="bg-typescript">
+        <span data-step-count=5></span>
+        <div class="wrap quiz">
+            <h1>QUIZ</h1>
+            <div class="grid ms">
+                <div class="column column-ts">
+                    <h2>Typescript</h2>
+                    <pre>function <span class="code-ex">helloWorld</span>(name = 'Bavo',
+                    age?: number): void {
+    console.log('Hello ' + name + ', your age is ' + age);
+}
+
+helloWorld('Joey', 27);
+helloWorld('Joey', '27');
+helloWorld('Joey');
+helloWorld();
+const name: string = helloWorld('Joey', 27);</pre>
+                </div>
+                <div class="column content-right console">
+                        <h2>console</h2>
+                        <div data-step="1" class="animate-show" style="margin-top: 5.8em;">Hello Joey, your age is 27</div>
+                        <div data-step="2" class="animate-show"><span class="error">COMIPLATION ERROR</span></div>
+                        <div data-step="3" class="animate-show">Hello Joey, your age is undefined</div>
+                        <div data-step="4" class="animate-show">Hello Bavo, your age is undefined</div>
+                        <div data-step="5" class="animate-show"><span class="error">COMIPLATION ERROR</span></div>
+                    </div>
+            </div>
+        </div>
     </section>

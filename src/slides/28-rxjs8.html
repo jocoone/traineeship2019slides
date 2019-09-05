@@ -1,0 +1,23 @@
+<section class="bg-rxjs fullscreen">
+    <span data-step-count=1></span>
+
+          <div class="wrap">
+            <h1>
+              ReplaySubject
+            </h1>  
+            <p style="font-size: 2em;">Same as a <code>BehaviourSubject</code> but will remember a number of items that will be send to the next subscriber.</p>
+            <pre>import { <span class="highlight">ReplaySubject</span> } from 'rxjs';
+const subject = new ReplaySubject(2); <span class="highlight">// buffer 2 values for new subscribers</span>
+subject.subscribe({
+  next: (v) => console.log(`A: ${v}`)
+});
+subject.next(1);
+subject.next(2);
+subject.next(3);
+subject.subscribe({
+  next: (v) => console.log(`B: ${v}`)
+});
+subject.next(4);<span class="highlight">// Output?</span></pre>
+                <pre class="animate-show" data-step="1"><span class="highlight">A: 1, A: 2, A: 3, B: 2, B: 3, A: 4, B: 4</span></pre>
+          </div>
+        </section>

@@ -1,18 +1,18 @@
 <section class="bg-rxjs">
         <div class="wrap">
           <h1>
-            Observable Disposing
+            Pull <i class="fas fa-arrows-alt-h"></i> Push
           </h1>
-          <p style="font-size: 2em;">Stop execution in order to stop using computation power.</p>
-          <pre>import { Observable } from 'rxjs';
+          <pre>export class PullClass {
+  pullData(): Array&lt;string> {
+    <span class="highlight">return ['first', 'second', 'last'];</span>
+  }
+}
 
-const observable = new Observable(function subscribe(subscriber) {
-   subscriber.next('Hello');
-   subscriber.next('world');
-   subscriber.next('!');
-});
-
-const subscription = observable.subscribe(s => console.log(s));
-<span class="highlight">subscription.unsubscribe();</span></pre>
+export class PushClass {
+  pushData(): <span class="highlight">Observable&lt;string></span> {
+    return Observable.of('first', 'second', 'last');
+  }
+}</pre>
         </div>
       </section>

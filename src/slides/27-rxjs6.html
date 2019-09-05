@@ -1,16 +1,20 @@
 <section class="bg-rxjs">
-  <span data-step-count=1></span>
-          <div class="wrap">
-            <h1>
-              Types of Subjects
-            </h1>
-            <p style="font-size: 2em;">All subjects with slightly different behaviour.</p>
-            <ul class="flexblock clients">
-              <li data-step="1"><h2 style="font-size: 2em;">Normal Subject</h2></li>
-              <li><h2 style="font-size: 2em;">BehaviourSubject</h2></li>
-              <li><h2 style="font-size: 2em;">ReplaySubject</h2></li>
-              <li><h2 style="font-size: 2em;">AsyncSubject</h2></li>
-            </ul>    
-                    
-          </div>
-        </section>
+        <div class="wrap">
+          <h1>
+            Cold Observable
+          </h1>
+          <pre>const observable = new Observable(subscriber => {
+  subscriber.next(Math.random());            
+})
+
+<span class="highlight">// subscription 1</span>
+observable.subscribe((data) => {
+  console.log(data); <span class="highlight">// 0.24957144215097515 (random number)</span>
+});
+              
+<span class="highlight">// subscription 2</span>
+observable.subscribe((data) => {
+  console.log(data); <span class="highlight">// 0.004617340049055896 (random number)</span>
+});</pre>
+        </div>
+      </section>

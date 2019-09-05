@@ -1,15 +1,28 @@
 <section class="bg-rxjs">
-  <span data-step-count=1></span>
         <div class="wrap">
           <h1>
-            Reactive Terminology
+            Observable Phases
           </h1>
-          <ul class="list-animated">
-            <li data-step="1"><h1>Observable</h1></li>
-            <li><h1>Operator</h1></li>
-            <li><h1>Subscription</h1></li>
-            <li><h1>Subject</h1></li>
-            <li><h1>Scheduler</h1></li>
+          <ul class="flexblock steps">
+            <li>
+              <h2 style="font-size: 2em;">Creating</h2>
+              <p style="font-size: 1.7em; line-height: 1.4em; margin-top: 20px;">Creating an instance of the observable.</p>
+            </li>
+            <li>
+              <div class="process step-2"></div>
+              <h2 style="font-size: 2em;">Subscribing</h2>
+              <p style="font-size: 1.7em; line-height: 1.4em; margin-top: 20px;">Start listening to data that will be send through the observable.</p>
+            </li>
+            <li>
+                <div class="process step-3"></div>
+              <h2 style="font-size: 2em;">Executing</h2>
+              <p style="font-size: 1.7em; line-height: 1.4em; margin-top: 20px;">Start transmitting data through the observable.</p>
+            </li>
+            <li>
+                <div class="process step-4"></div>
+              <h2 style="font-size: 2em;">Disposing</h2>
+              <p style="font-size: 1.7em; line-height: 1.4em; margin-top: 20px;">Stop execution in order to stop using computation power.</p>
+            </li>
           </ul>
         </div>
       </section>

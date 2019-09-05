@@ -1,20 +1,15 @@
 <section class="bg-rxjs">
-          <div class="wrap">
-            <h1>
-              Operator
-            </h1>
-            <ul class="flexblock specs">
-              <li>
-                  <h2>Pipeable operators</h2>
-                  <p style="font-size: 2em;">Manipulating data along the way.</p>
-              </li>
-              <li>
-                  <h2>Creation operators</h2>
-                  <p style="font-size: 2em;">Functions available to create observables.</p>
-              </li>
-            </ul>
-            
-            
-            <h2><a href="https://rxjs-dev.firebaseapp.com/guide/operators">https://rxjs-dev.firebaseapp.com/guide/operators</a></h2>
-          </div>
-        </section>
+        <div class="wrap">
+          <h1>
+            Observable Creation
+          </h1>
+          <p style="font-size: 2em;">Creating an instance of the observable.</p>
+          <pre>import { Observable } from 'rxjs';
+
+const observable = <span class="highlight">new Observable</span>(function subscribe(subscriber) {
+  subscriber.next('Hello');
+  subscriber.next('world');
+  subscriber.next('!');
+});</pre>
+        </div>
+      </section>
