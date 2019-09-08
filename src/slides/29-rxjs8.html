@@ -1,0 +1,15 @@
+<section class="bg-rxjs">
+    <span data-step-count=1></span>
+    <div class="wrap">
+        <h1>Exercise time!</h1>
+        <pre style="font-size: 2em;"><span class="highlight">Input:</span> 'this', 'is', 'my', 'first', 'exercise'</pre>
+        <pre style="font-size: 2em;"><span class="highlight">Exercise:</span> Log the length of every string</pre>
+        <pre style="font-size: 2em;" class="animate-show" data-step=1><span class="highlight">Solution:</span>
+import { of } from 'rxjs';
+import { map } from 'rxjs/operators';
+            
+of('this', 'is', 'my', 'first', 'exercise')
+    .pipe(map((x: string) => x.length))
+    .subscribe((x: number) => console.log(x))</pre>
+    </div>
+  </section>
